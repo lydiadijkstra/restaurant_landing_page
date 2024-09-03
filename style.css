@@ -1,11 +1,19 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #414141
 }
 
 .card {
     background-color: aqua;
     height: 400px;
     width: 300px;
+    display: inline-block;
 }
 
 .slide {
@@ -16,10 +24,12 @@ body {
 .upper-slide {
     background-size: cover;
     background-color: blueviolet;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .lower-slide {
     background-color: white;
+    padding: 20px;
 }
 
 #drinks-slide {
@@ -34,3 +44,10 @@ body {
     background-image: url("https://i.ibb.co/yWxRkz1/dessert.jpg");
 }
 
+.lower-slide h3, .lower-slide p {
+    text-align: center;
+}
+
+.lower-slide h3 {
+    margin-top: 35px;
+}
